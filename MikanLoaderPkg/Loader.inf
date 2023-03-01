@@ -6,7 +6,7 @@
 	VERSION_STRING			= 0.1
 	ENTRY_POINT				= UefiMain
 
-#	VALID_ARCHITECTURES		= x64 
+#	VALID_ARCHITECTURES		= X64 
 
 [Sources]
 	Main.c
@@ -21,3 +21,6 @@
 [Guids]
 
 [Protocols]
+	gEfiLoadedImageProtocolGuid
+	gEfiLoadFileProtocolGuid
+	gEfiSimpleFileSystemProtocolGuid
