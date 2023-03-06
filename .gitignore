@@ -2,3 +2,4 @@
 .vimsession
 *.o
 *.elf
+*.txt

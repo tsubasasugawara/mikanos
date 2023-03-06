@@ -1,4 +1,3 @@
-SHELL := /bin/bash
 TARGET = kernel.elf
 OBJS = main.o
 
@@ -12,14 +11,10 @@ all: $(TARGET)
 .PHONY: clean
 clean:
 	rm -rf *.o
-
-.PHONY: env
-env:
-	source $(HOME)/osbook/devenv/buildenv.sh
-
+	
 kernel.elf: $(OBJS) Makefile
 	ld.lld $(LDFLAGS) -o kernel.elf $(OBJS)
 
-%.o: %.cpp Makefile env
+%.o: %.cpp Makefile
 	clang++ $(CPPFLAGS) $(CXXFLAGS) -c $<
 
