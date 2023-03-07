@@ -2,5 +2,6 @@
 .vimsession
 *.o
 *.elf
-*.txt
+setup_memo.txt
 *.d
+hankaku.bin
